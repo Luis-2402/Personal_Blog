@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nuevo Artículo</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Nuevo Artículo</h1>
+  <form action="/new" method="POST">
+    <label for="title">Título:</label><br>
+    <input type="text" id="title" name="title" required><br><br>
+
+    <label for="date">Fecha de publicación:</label><br>
+    <input type="date" id="date" name="date" required><br><br>
+
+    <label for="content">Contenido:</label><br>
+    <textarea id="content" name="content" rows="10" cols="50" required></textarea><br><br>
+
+    <button type="submit">Publicar</button>
+  </form>
+  <p><a href="/admin">← Volver al Panel</a></p>
+</body>
+</html>

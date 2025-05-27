@@ -1,0 +1,25 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos del editor
+*.log
+*.swp
+
+# Ignorar configuraciones de entorno
+.env
+
+# Archivos del sistema de desarrollo
+.vscode/
+.idea/
+
+# Salida de dependencias compiladas
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos opcionales del entorno
+*.local

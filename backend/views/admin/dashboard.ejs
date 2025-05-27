@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel de Administración</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Panel de Administración</h1>
+  <p><a href="/logout">Cerrar sesión</a></p>
+  <p><a href="/new">➕ Nuevo Artículo</a></p>
+
+  <ul>
+    <% if (articles.length === 0) { %>
+      <li>No hay artículos publicados.</li>
+    <% } else { %>
+      <% articles.forEach(article => { %>
+        <li>
+          <h2><%= article.title %></h2>
+          <p><em><%= article.date %></em></p>
+          <p style="display: flex; align-items: center; gap: 10px;">
+            <a href="/edit/<%= article.id %>">✏️ Editar</a>
+            <form action="/delete/<%= article.id %>" method="POST" style="display:inline">
+              <button type="submit" onclick="return confirm('¿Eliminar este artículo?')">🗑️ Eliminar</button>
+            </form>
+          </p>
+        </li>
+      <% }) %>
+    <% } %>
+  </ul>
+</body>
+</html>

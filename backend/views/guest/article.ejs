@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title><%= article.title %> - Blog</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1><%= article.title %></h1>
+  <p style="font-weight: bolder;"><em>Publicado el <%= article.date %></em></p>
+  <article>
+    <p><%= article.content.replace(/\n/g, '<br>') %></p>
+  </article>
+  <p><a href="/">← Volver al inicio</a></p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Blog Personal</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Bienvenido a mi Blog</h1>
+  <ul>
+    <% if (articles.length === 0) { %>
+      <li>No hay artículos publicados todavía.</li>
+    <% } else { %>
+      <% articles.forEach(article => { %>
+        <li>
+          <h2><a href="/article/<%= article.id %>"><%= article.title %></a></h2>
+          <p><em>Publicado el <%= article.date %></em></p>
+        </li>
+      <% }) %>
+    <% } %>
+  </ul>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
