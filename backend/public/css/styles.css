@@ -3,18 +3,18 @@ body {
   max-width: 800px;
   margin: auto;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #f0f0f0; /* Light Gray */
   color: #333;
 }
 
 h1 {
-  color: #2c3e50;
+  color: #303f9f; /* Indigo */
   border-bottom: 2px solid #ccc;
   padding-bottom: 10px;
 }
 
 a {
-  color: #2980b9;
+  color: #009688; /* Teal */
   text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ form textarea {
 }
 
 button {
-  background-color: #2ecc71;
+  background-color: #4caf50; /* Green */
   color: white;
   border: none;
   padding: 10px 20px;
@@ -56,4 +56,17 @@ button {
 
 button:hover {
   background-color: #27ae60;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.article-card {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
