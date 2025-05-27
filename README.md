@@ -1,5 +1,7 @@
 # 📝 Blog Personal - Proyecto Fullstack (JavaScript + EJS)
 
+https://roadmap.sh/projects/personal-blog
+
 Este proyecto es una aplicación web sencilla para escribir y publicar artículos personales. Tiene una sección pública (visitantes) y una sección privada (admin).
 
 ---
