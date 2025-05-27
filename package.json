@@ -1,20 +1,18 @@
 {
-  "name": "personal_blog",
+  "name": "personal-blog",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Blog personal con Node.js y EJS",
+  "main": "backend/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "basic-auth": "^2.0.1",
-    "body-parser": "^2.2.0",
-    "ejs": "^3.1.10",
-    "express": "^5.1.0",
-    "express-session": "^1.18.1"
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
   }
 }
